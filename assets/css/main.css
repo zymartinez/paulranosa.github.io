@@ -63,6 +63,10 @@ ul li {
 	font-size: 24px;
 }
 
+.one article p strong sup {
+	font-weight: normal;
+}
+
 .two {}
 
 .two article h1 {
