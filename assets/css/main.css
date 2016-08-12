@@ -69,6 +69,10 @@ ul li {
 
 .two {}
 
+.two article {
+	padding-bottom: 40px;
+}
+
 .two article h1 {
 	width: 32.820512820513%;
 }
