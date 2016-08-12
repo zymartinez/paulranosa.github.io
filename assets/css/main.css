@@ -339,6 +339,7 @@ ul li {
 	width: 100%;
 	max-width: 860px;
 	border-radius: 6px;
+	display: none;
 }
 
 .theatre-box .gifts a {
