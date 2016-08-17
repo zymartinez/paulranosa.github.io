@@ -33,7 +33,7 @@ $(document).ready( function () {
 			var post = {
 				method: 'confirm',
 				name: $('form input[name=name]').val(),
-				mobile: $('form input[name=mobile').val(),
+				mobile: $('form input[name=mobile]').val(),
 				response: ''
 			}
 
