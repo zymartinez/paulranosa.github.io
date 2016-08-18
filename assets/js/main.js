@@ -1,7 +1,7 @@
 $(document).ready( function () {
 
 	// Seen
-	if ( window.location.search != "" ) {
+	if ( window.location.search != "" && navigator != undefined ) {
 		var match = window.location.search.match(/^\??code\=(\w{5})$/);
 		if ( match != undefined && match.length == 2 && match[1].length == 5 ) {
 			$('.theatre-box, .theatre-box .loader').show();
