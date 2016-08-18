@@ -266,6 +266,34 @@ ul li {
 	border-radius: 6px;
 	margin-bottom: 15px;
 	overflow: hidden;
+	position: relative;
+}
+
+.four ul li a span {
+    position: absolute;
+    top: 0;
+    background: rgba(0,0,0,0.7);
+    height: 100%;
+    width: 100%;
+}
+
+.four ul li a span em {
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+    background: #8ec63f;
+    height: 125px;
+    width: 125px;
+    display: block;
+    border-radius: 125px;
+    line-height: 125px;
+    font-style: normal;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
 }
 
 .four ul li span {
