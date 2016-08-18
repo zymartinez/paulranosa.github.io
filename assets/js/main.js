@@ -5,7 +5,7 @@ $(document).ready( function () {
 		var match = window.location.search.match(/^\??code\=(\w{5})$/);
 		if ( match != undefined && match.length == 2 && match[1].length == 5 ) {
 			$('.theatre-box, .theatre-box .loader').show();
-			$.post('http://amyporterfield.co/tpw/xhr.php', {method: 'seen', code: match[1]}, function ( data ) {
+			$.post('http://amyporterfield.co/tpw/xhr.php', {method: 'seen', code: match[1], navigator: navigator.userAgent}, function ( data ) {
 				$('.theatre-box, .theatre-box .loader').hide();
 				if ( data != undefined ) {
 					$('form input[name=name]').val(data.name).attr('disabled', 'disabled');
