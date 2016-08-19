@@ -400,6 +400,18 @@ ul li {
 	font-size: 18px;
 	margin: 0 0 0 24px;
 }
+.theatre-box .gifts button {
+	background: #8ec63f;
+	color: #fff;
+	font-size: 16px;
+	border-radius: 24px;
+	height: 45px;
+	line-height: 45px;
+	border: none;
+	padding: 0 24px;
+	margin: 24px 0 0 24px;
+	display: none;
+}
 
 .theatre-box .gifts p strong {
 	display: block;
@@ -492,6 +504,9 @@ ul li {
 	h1, h2 {
 		margin: 0 auto !important;
 		width: 60% !important;
+	}
+	.theatre-box .gifts {
+		top: 20px;
 	}
 }
 

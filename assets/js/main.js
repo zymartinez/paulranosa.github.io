@@ -1,5 +1,7 @@
 $(document).ready( function () {
 
+	var currentScrollTop = 0;
+
 	// Seen
 	if ( window.location.search != "" && navigator != undefined ) {
 		var match = window.location.search.match(/^\??code\=(\w{5})$/);
@@ -63,7 +65,7 @@ $(document).ready( function () {
 
 	});
 
-	$('.theatre-box button').on('click', function ( e ) {
+	$('.theatre-box .response button').on('click', function ( e ) {
 		e.preventDefault();
 		$('html, body').animate({
 			scrollTop: $('.four').offset().top
@@ -84,6 +86,9 @@ $(document).ready( function () {
     	$('.theatre-box .gifts img').attr('src', $(this).parent().find('img').attr('src'));
     	$('.theatre-box .gifts p').html( '<strong>' + $(this).parent().find('span').text() + '</strong>' + $(this).parent().find('p').text());
     	$('.theatre-box, .theatre-box .gifts').show();
+    	if ( $(this).parent().find('span').text().match(/^Honey/) ) {
+    		$('.theatre-box .gifts button').show();
+    	}
     });
 
     $('.theatre-box .gifts a').on('click', function ( e ) {
@@ -91,6 +96,14 @@ $(document).ready( function () {
     	$('.theatre-box, .theatre-box .gifts').hide();
     	$('.theatre-box .gifts img').attr('src', '');
     	$('.theatre-box .gifts p').text('&nbsp;');
+    	$('.theatre-box .gifts button').hide();
     });
+
+    $('.theatre-box .gifts button').on('click', function ( e ) {
+    	e.preventDefault();
+    	$('.theatre-box .gifts').hide();
+    	$('.theatre-box .loader').show();
+    	$('input[name=cmd]').parent()[0].submit();
+    })
 
 })
