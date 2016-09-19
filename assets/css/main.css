@@ -136,6 +136,35 @@ ul li {
 
 .three article section:first-child {
 	float: left;
+	position: relative;
+}
+
+.three article section div.disabled {
+	position: absolute;	
+	background: rgba(0,0,0,0.7);
+	height: 100%;
+	width: 100%;
+	left: 0;
+	top: 0;
+	border-radius: 9px;
+}
+
+.three article section div.disabled span {
+	position: absolute;	
+	top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+    display: block;
+    height: 125px;
+    width: 125px;
+    border-radius: 125px;
+    line-height: 125px;
+    background: #8ec63f;
 }
 
 .three article section:first-child h2 {

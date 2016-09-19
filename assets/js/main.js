@@ -29,7 +29,7 @@ $(document).ready( function () {
 
 	$('form button').on('click', function ( e ) {
 		e.preventDefault();
-
+		/*
 		if ( !$(this).hasClass('err') ) {
 
 			var post = {
@@ -60,8 +60,8 @@ $(document).ready( function () {
 					$('form button').removeClass('err').text('Submit');
 				}, 1000);
 			}
-
 		}
+		*/
 
 	});
 
